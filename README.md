@@ -1,2 +1,0 @@
-# CreditDefaultPrediction-
-Credit Default Prediction 
