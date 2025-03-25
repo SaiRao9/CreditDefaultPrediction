@@ -57,7 +57,7 @@ The business impact of implementing ML for loan default prediction can be signif
    * lump_sum_payment: A one-time payment made by the borrower during the term, often to pay off a portion of the loan.
    * LTV (Loan-to-Value): The ratio of the loan amount to the appraised value of the property being financed, used to assess risk.
    
-####2. Borrower’s Profile: These variables describe the personal and financial characteristics of the loan applicant and any co-applicants.
+#### 2. Borrower’s Profile: These variables describe the personal and financial characteristics of the loan applicant and any co-applicants.
 
    * Gender: The gender of the borrower.
    * Credit_Worthiness: The borrower’s ability and likelihood to repay the loan, often determined by a credit score or history.
@@ -68,7 +68,7 @@ The business impact of implementing ML for loan default prediction can be signif
    * co-applicant_credit_type: The credit type of the co-applicant, if applicable.
    * submission_of_application: The date or status indicating when the loan application was submitted.
    
-####3. Property and Security Information: These variables pertain to the property being financed and the collateral or security involved.
+#### 3. Property and Security Information: These variables pertain to the property being financed and the collateral or security involved.
    * property_value: The appraised value of the property that serves as collateral for the loan.
    * construction_type: The construction method of the property, such as brick, wood, etc.
    * occupancy_type: Refers to the use of the property, e.g., owner-occupied, rental property, or second home.
@@ -76,12 +76,12 @@ The business impact of implementing ML for loan default prediction can be signif
    * total_units: The number of units in the property.
    * Security_Type: Type of security for the loan, for example, real estate, personal guarantee, etc.
 
-####4. Approval and Status: These variables are related to the loan’s approval status and outcome. 
+#### 4. Approval and Status: These variables are related to the loan’s approval status and outcome. 
    * approv_in_adv: Indicates whether the loan has been approved in advance.
    * Status: The loan status (e.g., default or non-default).
    * dtir1: Likely a financial ratio or metric related to debt-to-income or other financial indicators, potentially measuring the borrower’s capacity to repay the loan.
    
-####5. Business/Commercial and Region : This variable is related to loans that may involve business or commercial purposes and geographical location related to the loan:
+#### 5. Business/Commercial and Region : This variable is related to loans that may involve business or commercial purposes and geographical location related to the loan:
    * business_or_commercial: Indicates whether the loan is for a business or commercial purpose.
    * Region: The geographic region where the loan is granted or the property is located.   
    
@@ -156,17 +156,19 @@ The business impact of implementing ML for loan default prediction can be signif
 
   **Plots:  
         
-   * 1. Income:loan_amount : The scatter plot for Income vs Loan Amount, color-coded by Status, reveals that the data points for Status values 0 and 1 are completely overlapping. This suggests that there is no clear separation between these two groups based on the Income and Loan Amount variables
+    * 1. Income:loan_amount : The scatter plot for Income vs Loan Amount, color-coded by Status, reveals that the data points for Status values 0 and 1 are completely overlapping. This suggests that there is no clear separation between these two groups based on the Income and Loan Amount variables
    Implication: The overlap may indicate that Income and Loan Amount alone do not provide sufficient discrimination between the two Status categories (0 and 1). Further analysis or additional features may be necessary to better distinguish between these groups.
-            *Income  vs. Loan_Amount: 
+
+          *Income  vs. Loan_Amount: 
      
    <img src="images/Income_loanAmount.png" alt="Alt text" width="800" height="500">
-  
-     
-   * 2. Credit_Score:loan_amount :The hexbin plot shows that the majority of borrowers fall within a narrower range of Credit_Score (likely around the mid-to-lower range, closer to 500) and more moderate Loan Amounts. The distribution suggests that there are fewer borrowers at the extremes (both low credit scores with high loan amounts and high credit scores with low loan amounts). This could highlight specific lending patterns, with most borrowers having average or moderate credit scores and loan amounts.
+      
+
+    * 2. Credit_Score:loan_amount :The hexbin plot shows that the majority of borrowers fall within a narrower range of Credit_Score (likely around the mid-to-lower range, closer to 500) and more moderate Loan Amounts. The distribution suggests that there are fewer borrowers at the extremes (both low credit scores with high loan amounts and high credit scores with low loan amounts). This could highlight specific lending patterns, with most borrowers having average or moderate credit scores and loan amounts.
     * Range of Variables:
         * Credit_Score values range from 500 to 900.
         * Loan Amount values range from 16,500 to 3,578,000.
+           
             * Credit_Score vs. Loan_Amount: 
     
    <img src="images/CreditScore_loanAmount.png" alt="Alt text" width="800" height="500"> 
